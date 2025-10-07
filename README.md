@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Shashank’s Developer Portfolio
 
-## Getting Started
+Welcome to my personal developer portfolio — a showcase of my technical projects, coding journey, and problem-solving skills across multiple tech stacks.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 About Me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hi! I’m **Shashank**, a passionate **Full-Stack Developer** and **Tech Explorer** who loves building practical, scalable, and beautifully designed apps.  
+I work across:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 💻 **Web Development** – React, Next.js, Node.js, Express  
+- 📱 **Mobile Apps** – Android (Kotlin), iOS (Swift, SwiftUI)  
+- ⚙️ **Backend Systems** – REST APIs, Databases (MongoDB, PostgreSQL)  
+- 🔗 **Blockchain** – Solidity, Web3.js, Smart Contracts  
+- 🧰 **Other Tools** – Git, Docker, Firebase, Python scripting  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Projects
 
-To learn more about Next.js, take a look at the following resources:
+| Project | Description | Tech Stack |
+|----------|--------------|-------------|
+| 🌍 **AI-Powered Developer Portfolio** | Dynamic portfolio site with AI resume generator & live coding stats | Next.js, Tailwind, OpenAI API |
+| 🪙 **Crypto Tracker Dashboard** | Real-time crypto portfolio tracker with wallet integration | React, Web3.js, Chart.js |
+| 💬 **Realtime Chat App** | Secure chat app with authentication & media sharing | Node.js, Express, Socket.io, MongoDB |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack Overview
 
-## Deploy on Vercel
+| Area | Tools |
+|------|-------|
+| Frontend | React, Next.js, Tailwind, TypeScript |
+| Backend | Node.js, Express, Python |
+| Database | MongoDB, PostgreSQL |
+| Mobile | Kotlin, Swift, SwiftUI |
+| DevOps | Docker, GitHub Actions |
+| Others | Firebase, Web3.js, Solidity |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Setup Instructions
+
+1. Clone the repository  
+   ```bash
+   git clone git@github.com:your-username/dev-portfolio.git
+   cd dev-portfolio
