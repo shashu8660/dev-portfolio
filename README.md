@@ -9,7 +9,7 @@ Welcome to my personal developer portfolio — a showcase of my technical projec
 Hi! I’m **Shashank**, a passionate **Full-Stack Developer** and **Tech Explorer** who loves building practical, scalable, and beautifully designed apps.  
 I work across:
 
-- 💻 **Web Development** – React, Next.js, Node.js, Express  
+- 💻 **Web Development** – React, Next.js, Node.js, Express , Java(Spring) , Rust
 - 📱 **Mobile Apps** – Android (Kotlin), iOS (Swift, SwiftUI)  
 - ⚙️ **Backend Systems** – REST APIs, Databases (MongoDB, PostgreSQL)  
 - 🔗 **Blockchain** – Solidity, Web3.js, Smart Contracts  
