@@ -21,9 +21,11 @@ I work across:
 
 | Project | Description | Tech Stack |
 |----------|--------------|-------------|
-| 🌍 **AI-Powered Developer Portfolio** | Dynamic portfolio site with AI resume generator & live coding stats | Next.js, Tailwind, OpenAI API |
-| 🪙 **Crypto Tracker Dashboard** | Real-time crypto portfolio tracker with wallet integration | React, Web3.js, Chart.js |
-| 💬 **Realtime Chat App** | Secure chat app with authentication & media sharing | Node.js, Express, Socket.io, MongoDB |
+| 🌍 **DevSync - Open Source Collaboration Hub** | A live, AI-powered workspace for open-source contributors.  
+Features real-time collaborative editing, AI commit summaries, GitHub integration| Next.js, Node.js, Tailwind, Web3.js, OpenAI API |
+| 🪙 **ChainView — Blockchain Transaction Visualizer** | A real-time blockchain dashboard for visualizing Ethereum transactions with beautiful interactive graphs and wallet activity summaries powered by AI. | Next.js, Ethers.js, D3.js, OpenAI API, TailwindCSS |
+| 💬 **SmartDesk — AI Developer Dashboard** | An AI-powered productivity dashboard for developers — featuring a code assistant, GitHub repo viewer, API tester, and Notion task integration.  
+Built for web and macOS environments. | Next.js, OpenAI API, Supabase, TailwindCSS, Framer Motion  |
 
 ---
 
@@ -32,11 +34,11 @@ I work across:
 | Area | Tools |
 |------|-------|
 | Frontend | React, Next.js, Tailwind, TypeScript |
-| Backend | Node.js, Express, Python |
+| Backend | Node.js, Express, Python, Java, Rust |
 | Database | MongoDB, PostgreSQL |
 | Mobile | Kotlin, Swift, SwiftUI |
 | DevOps | Docker, GitHub Actions |
-| Others | Firebase, Web3.js, Solidity |
+| Others | Firebase, Web3.js, Solidity, C++ |
 
 ---
 
