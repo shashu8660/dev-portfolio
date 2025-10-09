@@ -21,8 +21,7 @@ I work across:
 
 | Project | Description | Tech Stack |
 |----------|--------------|-------------|
-| 🌍 **DevSync - Open Source Collaboration Hub** | A live, AI-powered workspace for open-source contributors.  
-                                                  Features real-time collaborative editing| Next.js, Node.js, Tailwind, Web3.js, OpenAI API |
+| 🌍 **DevSync - Open Source Collaboration Hub** | A live, AI-powered workspace for open-source contributors. Features real-time collaborative editing| Next.js, Node.js, Tailwind, Web3.js, OpenAI API |
 | 🪙 **ChainView — Blockchain Transaction Visualizer** | A real-time blockchain dashboard for visualizing Ethereum transactions with beautiful interactive graphs and wallet activity summaries powered by AI. | Next.js, Ethers.js, D3.js, OpenAI API, TailwindCSS |
 | 💬 **SmartDesk — AI Developer Dashboard** | An AI-powered productivity dashboard for developers — featuring a code assistant, GitHub repo viewer, API tester, and Notion task integration. | Next.js, OpenAI API, Supabase, TailwindCSS, Framer Motion  |
 
