@@ -1,6 +1,26 @@
+"use client";
+
+import { motion } from 'framer-motion';
+
+const titleVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 6 },
+  visible: (i = 0) => ({ opacity: 1, y: 0, transition: { delay: i * 0.08 } }),
+};
+
 export default function Hero() {
   return (
-  <section className="relative min-h-screen lg:min-h-[80vh] flex items-center justify-center bg-white dark:bg-slate-900 overflow-hidden">
+  <motion.section
+    id="hero"
+    className="relative min-h-screen lg:min-h-[80vh] flex items-center justify-center bg-white dark:bg-slate-900 overflow-hidden"
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: 'easeOut' }}
+  >
       {/* decorative background */}
       <svg className="absolute inset-0 w-full h-full -z-10" preserveAspectRatio="none" viewBox="0 0 800 600" aria-hidden>
         <defs>
@@ -20,7 +40,7 @@ export default function Hero() {
         <div className="max-w-3xl mx-auto bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 sm:p-10 shadow-lg border border-transparent dark:border-slate-800">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold leading-tight text-slate-900 dark:text-white">
-              Hi, I’m <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-sky-500 to-emerald-400">Shashank</span>
+              Hi, Im <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-sky-500 to-emerald-400">Shashank</span>
             </h1>
 
             <p className="mt-4 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
@@ -28,22 +48,26 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a
+              <motion.a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-blue-300"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg transform-gpu transition duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-blue-300"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
                 </svg>
                 See My Work
-              </a>
+              </motion.a>
 
-              <a
+              <motion.a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-4 py-2 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition focus:outline-none focus:ring-2 focus:ring-slate-300"
+                className="inline-flex items-center gap-2 px-4 py-2 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-200 transform-gpu transition duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-300"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 Contact Me
-              </a>
+              </motion.a>
             </div>
 
             <div className="mt-6 flex items-center justify-center gap-6 text-slate-500 dark:text-slate-400">
@@ -70,6 +94,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+  </motion.section>
   );
 }

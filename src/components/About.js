@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from 'framer-motion';
+
 export default function About() {
   const skills = [
     "React / Next.js",
@@ -11,7 +15,14 @@ export default function About() {
   ];
 
   return (
-  <section id="about" className="py-16 px-6 bg-transparent">
+  <motion.section
+    id="about"
+    className="py-16 px-6 bg-transparent"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ duration: 0.8, ease: 'easeOut' }}
+  >
       <div className="container">
   <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
@@ -23,8 +34,8 @@ export default function About() {
             </p>
 
             <div className="flex gap-3 flex-wrap mb-5">
-              <a href="#projects" className="btn btn-primary" aria-label="See my work">See my work</a>
-              <a href="#contact" className="btn btn-ghost" aria-label="Contact me">Contact</a>
+              <a href="#projects" className="btn btn-primary transition transform-gpu duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] focus-visible:ring-4 focus-visible:ring-indigo-300" aria-label="See my work">See my work</a>
+              <a href="#contact" className="btn btn-ghost transition transform-gpu duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] focus-visible:ring-4 focus-visible:ring-indigo-300" aria-label="Contact me">Contact</a>
             </div>
 
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 mb-5">
@@ -76,6 +87,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

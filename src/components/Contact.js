@@ -1,8 +1,17 @@
 "use client";
 
+import { motion } from 'framer-motion';
+
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 px-6 bg-transparent">
+    <motion.section
+      id="contact"
+      className="py-16 px-6 bg-transparent"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div className="container">
         <div className="max-w-3xl mx-auto text-center bg-white/90 dark:bg-slate-900/80 backdrop-blur-sm rounded-2xl p-8 sm:p-10 shadow-md border border-transparent dark:border-slate-800">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-3">Contact Me</h2>
@@ -48,7 +57,7 @@ export default function Contact() {
             <div className="flex items-center justify-center">
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow hover:opacity-95 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow transform-gpu transition duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7" />
@@ -79,6 +88,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

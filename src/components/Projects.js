@@ -1,4 +1,7 @@
 // src/components/Projects.js
+"use client";
+
+import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 
 const projects = [
@@ -30,10 +33,17 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 px-6 bg-transparent">
+    <motion.section
+      id="projects"
+      className="py-16 px-6 bg-gradient-to-b from-slate-50 to-white"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div className="container">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-3">Featured Projects</h2>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white mb-3">Featured Projects</h2>
           <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-6">
             A selection of my work showcasing full-stack, AI integrations, and blockchain tooling. Click through to explore each project.
           </p>
@@ -46,9 +56,9 @@ export default function Projects() {
         </div>
 
         <div className="mt-10 text-center">
-          <a href="#" className="btn btn-ghost" aria-label="View all projects">View all projects</a>
+          <a href="#" className="btn btn-ghost transform-gpu transition duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] focus-visible:ring-4 focus-visible:ring-indigo-300" aria-label="View all projects">View all projects</a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

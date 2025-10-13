@@ -28,7 +28,7 @@ export default function ProjectCard({ project = {} }) {
 
   return (
     <article
-      className={`group bg-white dark:bg-slate-900 rounded-2xl shadow-md hover:shadow-xl transition-shadow p-3 max-w-[300px] border border-transparent hover:border-slate-100 dark:hover:border-slate-800 ${isClickable ? 'cursor-pointer hover:-translate-y-0.5 transform-gpu' : ''}`}
+      className={`group bg-white dark:bg-slate-900 rounded-2xl shadow-md hover:shadow-xl transition-shadow p-3 max-w-[300px] border border-transparent hover:border-slate-100 dark:hover:border-slate-800 ${isClickable ? 'cursor-pointer hover:-translate-y-0.5 transform-gpu' : ''} transform-gpu transition duration-200 ease-out`}
       role="article"
       tabIndex={0}
       aria-labelledby={id}
@@ -79,7 +79,7 @@ export default function ProjectCard({ project = {} }) {
                 href={live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md text-sm hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="inline-flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-md text-sm transform-gpu transition duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-label={`Open live site for ${title}`}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
@@ -96,7 +96,7 @@ export default function ProjectCard({ project = {} }) {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-2 py-1 border border-slate-200 dark:border-slate-800 rounded-md text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition focus:outline-none focus:ring-2 focus:ring-slate-300"
+                className="inline-flex items-center gap-1 px-2 py-1 border border-slate-200 dark:border-slate-800 rounded-md text-sm transform-gpu transition duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-300"
                 aria-label={`Open GitHub repository for ${title}`}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
