@@ -1,5 +1,16 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
+     <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+
     <section
       id="about"
       className="py-20 px-10 md:px-20 bg-black text-white border-t border-white/10"
@@ -57,8 +68,9 @@ export default function About() {
               C / C++ / Java
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
+         </div>
+       </div>
+     </section>
+    </motion.div>
   );
 }

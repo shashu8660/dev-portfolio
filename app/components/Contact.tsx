@@ -1,5 +1,14 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      >
     <section
       id="contact"
       className="py-20 px-10 md:px-20 bg-black text-white border-t border-white/10"
@@ -84,5 +93,6 @@ export default function Contact() {
         </form>
       </div>
     </section>
+    </motion.div>
   );
 }
