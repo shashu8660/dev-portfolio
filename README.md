@@ -46,3 +46,13 @@ I work across:
    ```bash
    git clone git@github.com:your-username/dev-portfolio.git
    cd dev-portfolio
+
+
+# 🚀 Shashank – Developer Portfolio
+
+[![Portfolio](https://img.shields.io/badge/Live-Portfolio-blueviolet?style=for-the-badge)](https://dev-portfolio-qcj2.vercel.app/#projects)
+
+---
+
+## About
+Personal portfolio showcasing projects, skills, and modern web development work.
