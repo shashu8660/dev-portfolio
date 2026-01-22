@@ -50,7 +50,7 @@ I work across:
 
 # 🚀 Shashank – Developer Portfolio
 
-[![Portfolio](https://img.shields.io/badge/Live-Portfolio-blueviolet?style=for-the-badge)](https://dev-portfolio-qcj2.vercel.app/#projects)
+[![Portfolio](https://img.shields.io/badge/Live-Portfolio-blueviolet?style=for-the-badge)](https://dev-portfolio-qcj2.vercel.app/)
 
 ---
 
